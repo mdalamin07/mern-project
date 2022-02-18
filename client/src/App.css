@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: #acdbf85e  !important;
+}
+/* Navbar Area */
+.navbar{
+  background-color: #ffffff;
+  padding-bottom: 0;
+}
+.navbar-brand{
+  color: #000000;
+  font-size: 35px !important;
+  font-weight: 700;
+}
+.navbar-brand span{
+  color: #1597E5;
+}
+.navbar-brand:hover{
+  color: black;
+}
+span.navbar-toggler-icon {
+  font-size: 28px;
+}
+/* .activeNav{
+  color: red;
+  font-weight: bold;
+} */
+.nav-item a{
+  color: black;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.5s !important;
+}
+/* .nav-item a:hover{
+  color: #1597E5 !important;
+} */
+
+/* Registration Area */
+
+.signup{
+  width: 70%;
+  margin: 0 auto;
+}
+/* .signup_form{
+  text-align: center;
+} */
+.form_title{
+  font-size: 30px;
+  font-weight: bold;
+}
+.form-group {
+  border-bottom: 2px solid rgb(178 176 176);;
+}
+.form-group:last-child{
+  border-bottom: none;
+}
+form input{
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.form_submit{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 5px 20px;
+  transition: 0.5s;
+  text-transform: capitalize;
+  background-color: #1597E5;
+}
+.form_submit:hover{
+  background-color: #000000;
+}
+.signup_image{
+  text-align: center;
+}
+.signup_image img{
+  float: inline-end;
+}
+.signup_img_caption{
+  text-decoration: none;
+  transition: 0.5s;
+}
+.signup_img_caption:hover{
+  color: #000000;
+}
+
+/* Login Area */
+
+.login{
+  width: 70%;
+  margin: 0 auto;
+}
+.login_image{
+  text-align: center;
+}
+figure{
+  text-align: start;
+}
+.login_img_caption{
+  text-align: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.login_img_caption:hover{
+  color: #000000;
+}
+
+/* Contact Area */
+
+.contact_info h4{
+  color: #1597E5;
+}
+.contact_form_text{
+  outline: none;
+  height: 130px;
+}
+.contact_form_button button{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+  transition: 0.5s;
+  background-color: #1597E5;
+}
+.contact_form_button button:hover{
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* Home Area */
+
+.home_content {
+  height: 100vh;
+  background: linear-gradient(to right,  #e0f1fc 0%,#e0f1fc 50%,#ffffff 50%,#ffffff 100%);
+}
+.home_content p{
+  color: #1597E5;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+/* About Area */
+.profile_head h6{
+  color: #1597E5;
+}
+.profile_work a{
+  color: #1597E5;
+}
+.nav-pills .nav-link, .nav-pills .show > .nav-link {
+  border: 2px solid #1597E5;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1597E5;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link:hover {
+  color: #fff !important;
+}
+/* Errorpage Area */
+
+.error_content{
+  height: 100vh;
+}
+.notfound{
+  position: relative;
+}
+.notfound h1{
+  font-size: 200px;
+  opacity: 0.1;
+}
+.error_text{
+  position: absolute;
+  text-align: center;
+}
+.error_text h2{
+  font-size: 35px;
+  font-weight: bold;
+}
+.error_text p{
+  width: 60%;
+}
+.error_text a{
+  color: #ffffff;
+  background-color: #1597E5;
+  transition: 0.5s;
+}
+.error_text a:hover{
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* Responsive */
+/* Tablet Layout */
+@media only screen and (min-width:200px) and (max-width:991px){
+  .navbar-brand{font-size: 25px !important;}
+  .profile_image {padding-top: 15px;}
+  form input {padding-right: 0;}
+
+}
+/* Mobile Layout */
+@media only screen and (min-width:200px) and (max-width:480px){
+  .navbar-brand{font-size: 25px !important;}
+  .profile_image {padding-top: 15px;}
+  /* .profile_head{text-align: center;} */
+  /* .nav_pills{margin-left: 40px;} */
+  .contact_form_title{text-align: center; padding-top: 10px;}
+  .contact_form_text{width: 90% !important;}
+  .contact_form_input{margin-left: 15px;}
+  .contact_form_input input {width: 95%;}
+  .login{width: 100%;}
+  .login_image{padding-top: 10px; text-align: left;}
+  .form_submit{margin-bottom: 10px;}
+  .signup{width: 100%;}
+  .form_title{padding-top: 10px;}
+  #home p{font-size: 12px;}
+}
